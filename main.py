@@ -19,7 +19,7 @@ GREEN = (0, 255, 0)
 
 player_pos = [WINDOW_WIDTH // 2, 4*WINDOW_HEIGHT // 5]
 player_radius = 5
-player_speed = 5
+player_speed = 4
 
 running = True
 clock = pygame.time.Clock()
@@ -34,8 +34,6 @@ while running:
     for event in pygame.event.get():
         if event.type == pygame.QUIT or (event.type == pygame.KEYDOWN and event.key == pygame.K_ESCAPE):
             running = False
-    
-
 
     pygame.draw.circle(screen, GREEN, player_pos, player_radius)
 
